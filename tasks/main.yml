@@ -1,0 +1,15 @@
+---
+- name: Graphic Intel
+  block:
+
+    - include_vars: "{{ ansible_distribution }}.yml"
+
+    - name: Install packages
+      package:
+        name: "{{packages}}"
+        state: latest
+
+  when:
+    - graphic_intel is defined
+    - graphic_intel == true
+...

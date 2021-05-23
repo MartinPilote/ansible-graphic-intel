@@ -1,0 +1,8 @@
+---
+packages:
+  - "intel-media-driver"
+  - "libva"
+  - "libva-intel-driver"
+  - "libva-vdpau-driver"
+  - "libva-utils"
+...
